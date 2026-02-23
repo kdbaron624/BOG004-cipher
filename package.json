@@ -1,29 +1,27 @@
 {
-  "name": "cipher",
-  "version": "1.0.0",
-  "main": "src/index.html",
-  "license": "MIT",
+  "name": "cipher-cesar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
-    "eslint": "eslint --ext .js src/ test/",
-    "pretest": "npm run eslint && npm run htmlhint",
-    "test": "jest --verbose --coverage",
-    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve -s ./src",
-    "deploy": "gh-pages -d src"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "babel-jest": "^27.0.1",
-    "eslint": "^8.3.0",
-    "gh-pages": "^3.1.0",
-    "htmlhint": "^1.0.0",
-    "jest": "^27.0.1",
-    "opener": "^1.5.1",
-    "serve": "^13.0.2"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
-  "engines": {
-    "node": ">=14.x"
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.3.1"
   }
 }
